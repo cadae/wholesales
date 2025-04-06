@@ -33,29 +33,52 @@
         font-size: 12px;
     }
 
+    /* Header height reduction for mobile */
+    .main-header {
+        padding: 0;
+        min-height: 40px; /* Fixed height for header */
+    }
+
     .main-header .container {
-        flex-direction: column;
-        padding: 10px;
+        flex-direction: row; /* Change back to row for better layout */
+        padding: 2px;
+        justify-content: center;
+        position: relative;
     }
     
     .logo-container {
-        margin-bottom: 15px;
+        margin: 0;
+        padding: 0;
         text-align: center;
+        max-width: 120px; /* Limit width to make logo smaller */
+    }
+    
+    .logo {
+        max-height: 30px; /* Reduced even further */
+        width: auto;
+        vertical-align: middle;
     }
     
     .mobile-menu-toggle {
         display: block;
         position: absolute;
-        top: 20px;
-        right: 20px;
+        top: 5px; /* Reduced position from top */
+        right: 5px; /* Reduced position from right */
+        padding: 0;
     }
     
+    .bar {
+        height: 2px; /* Thinner bars */
+        margin: 4px auto; /* Less spacing between bars */
+        width: 22px; /* Slightly smaller width */
+    }
+
     .nav-links {
         display: none;
         flex-direction: column;
         width: 100%;
         text-align: center;
-        margin-top: 15px;
+        margin-top: 5px;
     }
     
     .nav-links.active {
@@ -63,7 +86,7 @@
     }
     
     .nav-links li {
-        margin: 10px 0;
+        margin: 5px 0; /* Reduced spacing between nav items */
     }
     
     .dropdown-menu {
@@ -157,7 +180,11 @@
     }
 
     header {
-        padding: 20px;
+        padding: 15px; /* Reduced from 20px */
+    }
+
+    .logo {
+        max-height: 50px; /* Added height control for tablet */
     }
 
     .product-card {
