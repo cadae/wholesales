@@ -1,0 +1,269 @@
+/* Responsive styles for the SCZ Wholesale website */
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    .product-card {
+        flex-direction: column;
+        margin: 10px 0;
+        height: auto;
+    }
+
+    .product-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Changed from cover to contain to show full image */
+    }
+
+    .product-image {
+        height: 220px; /* Increased height to allow more space for images */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-info {
+        font-size: 12px;
+    }
+
+    .main-header .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .logo-container {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    .mobile-menu-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+    
+    .nav-links li {
+        margin: 10px 0;
+    }
+    
+    .dropdown-menu {
+        position: static;
+        display: none;
+        width: 100%;
+        box-shadow: none;
+        padding-left: 20px;
+    }
+    
+    .dropdown.active .dropdown-menu {
+        display: block;
+    }
+    
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .section-heading {
+        font-size: 1.6rem;
+    }
+    
+    .product-categories,
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    /* Product detail responsive */
+    .product-overview {
+        flex-direction: column;
+    }
+    
+    .product-item {
+        flex-direction: column;
+    }
+    
+    .product-item .product-image {
+        height: 250px;
+        width: 100%;
+    }
+    
+    /* Services responsive */
+    .service-item, 
+    .service-item:nth-child(odd) {
+        flex-direction: column;
+    }
+    
+    .service-image {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 250px;
+    }
+    
+    .service-content {
+        padding: 0;
+    }
+    
+    /* About responsive */
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .about-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    /* Contact responsive */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-info {
+        padding-right: 0;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    .product-card {
+        flex-direction: row;
+        margin: 15px;
+    }
+
+    .product-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Changed to contain to show full image */
+    }
+
+    .product-image {
+        height: 240px; /* Increased height for better image display */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-info {
+        font-size: 14px;
+    }
+
+    /* Service item responsive */
+    .service-content {
+        padding: 0 20px;
+    }
+    
+    /* Contact responsive */
+    .contact-grid {
+        gap: 30px;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+    body {
+        font-size: 18px;
+    }
+
+    header {
+        padding: 30px;
+    }
+
+    .product-card {
+        margin: 20px;
+        height: 100%;
+    }
+
+    .product-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Changed to contain to show full image */
+    }
+
+    .product-image {
+        height: 280px; /* Increased height for better image display */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-info {
+        font-size: 16px;
+    }
+}
+
+/* Responsive styles */
+
+/* Large screens (desktops, 992px and up) */
+@media (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+}
+
+/* Medium screens (tablets, 768px and up) */
+@media (max-width: 992px) {
+    .hero {
+        padding: 80px 0;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .product-categories,
+    .features-grid,
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
