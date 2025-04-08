@@ -52,7 +52,7 @@ For any inquiries, please reach out to us at:
 
 - **Company Name**: SCZ Group Pty Ltd
 - **ABN**: 37 634 803 428
-- **Email**: sczgroup888@gmail.com
+- **Email**: ask@sczgroup.com.au
 - **Address**: 12 Nixon Place, Cherrybrook, NSW 2126
 - **Phone Number**: 0433 908 666
 
